@@ -1,0 +1,161 @@
+[
+  {
+    "code": "BCI381+380",
+    "image": "images/products/placeholder.svg",
+    "name": "BCI381+380 標準セット",
+    "aliases": [
+      "BCI381",
+      "BCI380",
+      "381",
+      "380"
+    ],
+    "rating": 5,
+    "compatiblePrinters": [
+      "TS8430",
+      "TS8630",
+      "TS8730"
+    ],
+    "variants": [
+      {
+        "id": "bci381-1set",
+        "label": "1セット",
+        "price": 2480,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci381-3set",
+        "label": "3セット",
+        "price": 6980,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci381-black4",
+        "label": "ブラック4本",
+        "price": 3280,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci381-color",
+        "label": "カラーセット",
+        "price": 2180,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "SAT",
+    "image": "images/products/placeholder.svg",
+    "name": "SAT（サツマイモ）互換セット",
+    "aliases": [
+      "さつまいも"
+    ],
+    "rating": 5,
+    "compatiblePrinters": [
+      "EW-452A"
+    ],
+    "variants": [
+      {
+        "id": "sat-1set",
+        "label": "1セット",
+        "price": 2280,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-3set",
+        "label": "3セット",
+        "price": 6480,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-black4",
+        "label": "ブラック4本",
+        "price": 2980,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "KAM",
+    "image": "images/products/placeholder.svg",
+    "name": "KAM（カメ）互換セット",
+    "aliases": [
+      "カメ"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "EW-052A"
+    ],
+    "variants": [
+      {
+        "id": "kam-1set",
+        "label": "1セット",
+        "price": 2180,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-3set",
+        "label": "3セット",
+        "price": 5980,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "LC411",
+    "image": "images/products/placeholder.svg",
+    "name": "LC411 互換セット",
+    "aliases": [
+      "LC411XL"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "DCP-J928N",
+      "DCP-J926N",
+      "MFC-J739DN"
+    ],
+    "variants": [
+      {
+        "id": "lc411-1set",
+        "label": "1セット",
+        "price": 1980,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-3set",
+        "label": "3セット",
+        "price": 5480,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-black4",
+        "label": "ブラック4本",
+        "price": 2680,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "MUG",
+    "image": "images/products/placeholder.svg",
+    "name": "MUG（マグカップ）互換セット",
+    "aliases": [
+      "マグカップ"
+    ],
+    "rating": 5,
+    "compatiblePrinters": [],
+    "variants": [
+      {
+        "id": "mug-1set",
+        "label": "1セット",
+        "price": 2380,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-3set",
+        "label": "3セット",
+        "price": 6680,
+        "stock": "在庫あり"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+  .hero { padding: 40px 0 52px; }
+  .scan-frame { padding: 14px; }
+  .search-box { flex-direction: column; }
+  .search-box button { padding: 14px; }
+  .trust-row { gap: 14px 20px; }
+  .variant-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .variant-grid { grid-template-columns: repeat(3, 1fr); }
+}

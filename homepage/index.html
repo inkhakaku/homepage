@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>インク破格王 | 探す時間をなくす。</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">インク破格王<small>プリンター型番でも、インク型番でも、最短で目的の商品へ。</small></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>探す時間を<span class="accent">なくす。</span></h1>
+      <p>プリンター型番・インク型番を入力してください</p>
+    </div>
+
+    <div class="scan-frame">
+      <span class="corner-tl"></span>
+      <span class="corner-br"></span>
+      <form id="search-form" class="search-box" autocomplete="off">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="例）TS8430 / BCI381+380 / MUG"
+          aria-label="プリンター型番・インク型番を入力"
+        >
+        <button type="submit">🔍 検索</button>
+        <div id="autocomplete" class="autocomplete" role="listbox"></div>
+      </form>
+    </div>
+    <p class="hint-line">型番の一部だけの入力でも候補を表示します（曖昧検索）</p>
+
+    <div class="trust-row">
+      <span class="badge">安心一年保証</span>
+      <span class="badge">最新ラベル</span>
+      <span class="badge">高回転率＆フレッシュ在庫</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div id="result-area" class="result-area"></div>
+
+  <div id="recent-section" class="section recent-section">
+    <h2>最近検索した型番</h2>
+    <div id="recent-row" class="chip-row"></div>
+  </div>
+
+  <div class="section">
+    <h2>検索例</h2>
+    <div class="chip-row">
+      <button type="button" class="chip" data-example="TS8430">TS8430</button>
+      <button type="button" class="chip" data-example="BCI381+380">BCI381+380</button>
+      <button type="button" class="chip" data-example="MUG">MUG</button>
+      <button type="button" class="chip" data-example="LC411">LC411</button>
+      <button type="button" class="chip" data-example="EW-452A">EW-452A</button>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; 2026 インク破格王</div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/search.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

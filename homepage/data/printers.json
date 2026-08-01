@@ -1,0 +1,10 @@
+[
+  { "model": "TS8430", "maker": "Canon", "inkCode": "BCI381+380" },
+  { "model": "TS8630", "maker": "Canon", "inkCode": "BCI381+380" },
+  { "model": "TS8730", "maker": "Canon", "inkCode": "BCI381+380" },
+  { "model": "EW-452A", "maker": "Epson", "inkCode": "SAT" },
+  { "model": "EW-052A", "maker": "Epson", "inkCode": "KAM" },
+  { "model": "DCP-J928N", "maker": "Brother", "inkCode": "LC411" },
+  { "model": "DCP-J926N", "maker": "Brother", "inkCode": "LC411" },
+  { "model": "MFC-J739DN", "maker": "Brother", "inkCode": "LC411" }
+]
