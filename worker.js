@@ -3,7 +3,10 @@ export default {
     const url = new URL(request.url);
 
     // Stripe Checkout Session作成
-    if (request.method === "POST" && url.pathname === "/api/create-checkout-session") {
+    if (
+      request.method === "POST" &&
+      url.pathname === "/api/create-checkout-session"
+    ) {
       try {
         const body = await request.json();
         const variantId = body.variantId;
@@ -18,13 +21,16 @@ export default {
           );
         }
 
-        // 商品データを取得
-        const dataUrl = new URL("/data/inks.json", request.url);
-        const dataResponse = await env.ASSETS.fetch(dataUrl);
+        // GitHubの商品データを取得
+        const dataResponse = await fetch(
+          "https://raw.githubusercontent.com/inkhakaku/homepage/main/data/inks.json"
+        );
 
         if (!dataResponse.ok) {
           return new Response(
-            JSON.stringify({ error: "商品データを取得できませんでした" }),
+            JSON.stringify({
+              error: "商品データを取得できませんでした",
+            }),
             {
               status: 500,
               headers: { "Content-Type": "application/json" },
@@ -52,7 +58,9 @@ export default {
 
         if (!selectedInk || !selectedVariant) {
           return new Response(
-            JSON.stringify({ error: "商品が見つかりません" }),
+            JSON.stringify({
+              error: "商品が見つかりません",
+            }),
             {
               status: 404,
               headers: { "Content-Type": "application/json" },
@@ -88,7 +96,9 @@ export default {
         if (!stripeResponse.ok) {
           return new Response(
             JSON.stringify({
-              error: session.error?.message || "Stripe決済の作成に失敗しました",
+              error:
+                session.error?.message ||
+                "Stripe決済の作成に失敗しました",
             }),
             {
               status: 500,
@@ -106,7 +116,9 @@ export default {
       } catch (error) {
         return new Response(
           JSON.stringify({
-            error: error.message || "サーバーエラーが発生しました",
+            error:
+              error.message ||
+              "サーバーエラーが発生しました",
           }),
           {
             status: 500,
@@ -116,7 +128,7 @@ export default {
       }
     }
 
-    // 通常のページ表示
-    return env.ASSETS.fetch(request);
+    // Worker自身の確認
+    return new Response("homepage Worker is running");
   },
 };
