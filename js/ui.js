@@ -47,6 +47,7 @@ const UI = (() => {
 
     const card = container.querySelector('.result-card');
     const variants = card.querySelectorAll('.variant');
+
     variants.forEach(v => {
       v.addEventListener('click', () => {
         variants.forEach(x => x.classList.remove('is-selected'));
@@ -54,10 +55,47 @@ const UI = (() => {
       });
     });
 
-    card.querySelector('.buy-btn').addEventListener('click', () => {
+    // Stripe Checkoutへ移動
+    card.querySelector('.buy-btn').addEventListener('click', async () => {
       const selected = card.querySelector('.variant.is-selected');
-      const label = selected ? selected.querySelector('.label').textContent : '';
-      alert('ご購入ありがとうございます。\n' + ink.name + '（' + label + '）\n※これはデモ動作です。決済機能は未実装です。');
+
+      if (!selected) {
+        alert('商品を選択してください。');
+        return;
+      }
+
+      const variantId = selected.dataset.variantId;
+      const buyButton = card.querySelector('.buy-btn');
+
+      try {
+        buyButton.disabled = true;
+        buyButton.textContent = '決済ページへ移動中…';
+
+        const response = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            variantId: variantId
+          })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.url) {
+          throw new Error(data.error || '決済ページの作成に失敗しました。');
+        }
+
+        window.location.href = data.url;
+
+      } catch (error) {
+        console.error(error);
+        alert(error.message || '決済ページへの移動に失敗しました。');
+
+        buyButton.disabled = false;
+        buyButton.textContent = '購入する';
+      }
     });
   }
 
@@ -77,14 +115,18 @@ const UI = (() => {
 
   function renderRecent(container, sectionEl, onPick) {
     const list = getRecent();
+
     if (!list.length) {
       sectionEl.classList.remove('has-items');
       return;
     }
+
     sectionEl.classList.add('has-items');
+
     container.innerHTML = list.map(term =>
       '<button type="button" class="chip" data-term="' + escapeHtml(term) + '">' + escapeHtml(term) + '</button>'
     ).join('');
+
     container.querySelectorAll('.chip').forEach(btn => {
       btn.addEventListener('click', () => onPick(btn.dataset.term));
     });
@@ -92,7 +134,11 @@ const UI = (() => {
 
   function escapeHtml(str) {
     return String(str).replace(/[&<>"']/g, s => ({
-      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
     }[s]));
   }
 
