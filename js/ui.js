@@ -71,7 +71,7 @@ const UI = (() => {
         buyButton.disabled = true;
         buyButton.textContent = '決済ページへ移動中…';
 
-        const response = await fetch('/api/create-checkout-session', {
+        const response = await fetch('https://homepage.tenten001173.workers.dev/api/create-checkout-session', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
