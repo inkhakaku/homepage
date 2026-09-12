@@ -2,6 +2,21 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // CORS
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "https://inkhakaku.github.io",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
+
+    // CORS preflight
+    if (request.method === "OPTIONS") {
+      return new Response(null, {
+        status: 204,
+        headers: corsHeaders,
+      });
+    }
+
     // Stripe Checkout Session作成
     if (
       request.method === "POST" &&
@@ -13,10 +28,15 @@ export default {
 
         if (!variantId) {
           return new Response(
-            JSON.stringify({ error: "variantId is required" }),
+            JSON.stringify({
+              error: "variantId is required",
+            }),
             {
               status: 400,
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json",
+                ...corsHeaders,
+              },
             }
           );
         }
@@ -33,7 +53,10 @@ export default {
             }),
             {
               status: 500,
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json",
+                ...corsHeaders,
+              },
             }
           );
         }
@@ -63,7 +86,10 @@ export default {
             }),
             {
               status: 404,
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json",
+                ...corsHeaders,
+              },
             }
           );
         }
@@ -79,14 +105,22 @@ export default {
             },
             body: new URLSearchParams({
               mode: "payment",
+
               "line_items[0][price_data][currency]": "jpy",
+
               "line_items[0][price_data][product_data][name]":
                 selectedInk.name,
+
               "line_items[0][price_data][unit_amount]":
                 String(selectedVariant.price),
+
               "line_items[0][quantity]": "1",
-              success_url: `${url.origin}/?payment=success`,
-              cancel_url: `${url.origin}/?payment=cancel`,
+
+              success_url:
+                "https://inkhakaku.github.io/?payment=success",
+
+              cancel_url:
+                "https://inkhakaku.github.io/?payment=cancel",
             }),
           }
         );
@@ -102,15 +136,24 @@ export default {
             }),
             {
               status: 500,
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json",
+                ...corsHeaders,
+              },
             }
           );
         }
 
         return new Response(
-          JSON.stringify({ url: session.url }),
+          JSON.stringify({
+            url: session.url,
+          }),
           {
-            headers: { "Content-Type": "application/json" },
+            status: 200,
+            headers: {
+              "Content-Type": "application/json",
+              ...corsHeaders,
+            },
           }
         );
       } catch (error) {
@@ -122,13 +165,19 @@ export default {
           }),
           {
             status: 500,
-            headers: { "Content-Type": "application/json" },
+            headers: {
+              "Content-Type": "application/json",
+              ...corsHeaders,
+            },
           }
         );
       }
     }
 
     // Worker自身の確認
-    return new Response("homepage Worker is running");
+    return new Response("homepage Stripe API is running", {
+      status: 200,
+      headers: corsHeaders,
+    });
   },
 };
