@@ -5,7 +5,7 @@ export default {
     // CORS
     const corsHeaders = {
       "Access-Control-Allow-Origin": "https://inkhakaku.github.io",
-      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Methods": "POST, OPTIONS, GET",
       "Access-Control-Allow-Headers": "Content-Type",
     };
 
@@ -15,6 +15,27 @@ export default {
         status: 204,
         headers: corsHeaders,
       });
+    }
+
+    // Stripe Secret Key確認用
+    if (
+      request.method === "GET" &&
+      url.pathname === "/api/debug-stripe"
+    ) {
+      return new Response(
+        JSON.stringify({
+          stripeKeyConfigured:
+            typeof env.STRIPE_SECRET_KEY === "string" &&
+            env.STRIPE_SECRET_KEY.startsWith("sk_"),
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            ...corsHeaders,
+          },
+        }
+      );
     }
 
     // Stripe Checkout Session作成
@@ -117,10 +138,10 @@ export default {
               "line_items[0][quantity]": "1",
 
               success_url:
-                "https://inkhakaku.github.io/?payment=success",
+                "https://inkhakaku.github.io/homepage/?payment=success",
 
               cancel_url:
-                "https://inkhakaku.github.io/?payment=cancel",
+                "https://inkhakaku.github.io/homepage/?payment=cancel",
             }),
           }
         );
@@ -175,9 +196,12 @@ export default {
     }
 
     // Worker自身の確認
-    return new Response("homepage Stripe API is running", {
-      status: 200,
-      headers: corsHeaders,
-    });
+    return new Response(
+      "homepage Stripe API is running",
+      {
+        status: 200,
+        headers: corsHeaders,
+      }
+    );
   },
 };
