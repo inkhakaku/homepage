@@ -137,6 +137,8 @@ export default {
 
               "line_items[0][quantity]": "1",
 
+              "shipping_address_collection[allowed_countries][0]": "JP",
+
               success_url:
                 "https://inkhakaku.github.io/homepage/?payment=success",
 
