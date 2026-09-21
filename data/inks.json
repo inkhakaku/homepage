@@ -1,43 +1,211 @@
 [
   {
-    "code": "BCI381+380",
+    "code": "MUG",
     "image": "images/products/placeholder.svg",
-    "name": "BCI381+380 標準セット",
+    "name": "MUG（マグカップ）互換セット",
     "aliases": [
-      "BCI381",
-      "BCI380",
-      "381",
-      "380"
+      "マグカップ"
     ],
     "rating": 5,
     "compatiblePrinters": [
-      "TS8430",
-      "TS8630",
-      "TS8730"
+      "EW-052A",
+      "EW-452A"
     ],
     "variants": [
       {
-        "id": "bci381-1set",
-        "label": "1セット",
-        "price": 2480,
+        "id": "mug-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
         "stock": "在庫あり"
       },
       {
-        "id": "bci381-3set",
-        "label": "3セット",
-        "price": 6980,
+        "id": "mug-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
         "stock": "在庫あり"
       },
       {
-        "id": "bci381-black4",
-        "label": "ブラック4本",
-        "price": 3280,
+        "id": "mug-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
         "stock": "在庫あり"
       },
       {
-        "id": "bci381-color",
-        "label": "カラーセット",
-        "price": 2180,
+        "id": "mug-pgbk4",
+        "label": "黒4",
+        "price": 1149,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set1",
+        "label": "1SET売価",
+        "price": 1049,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-pgbk8",
+        "label": "黒8",
+        "price": 1949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-avg10",
+        "label": "カラー自由10個",
+        "price": 2099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-pgbk12",
+        "label": "黒12",
+        "price": 2799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set3",
+        "label": "3SET売価",
+        "price": 2549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-pgbk20",
+        "label": "黒20",
+        "price": 4899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set5",
+        "label": "5SET売価",
+        "price": 4449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set10",
+        "label": "10SET売価",
+        "price": 8649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set1-pgbk2",
+        "label": "1SET＋黒2",
+        "price": 1599,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set3-pgbk6",
+        "label": "4色+黒2×3",
+        "price": 4549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "mug-set5-pgbk10",
+        "label": "4色+黒2×5",
+        "price": 7099,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "MED",
+    "image": "images/products/placeholder.svg",
+    "name": "MED（メダマヤキ）互換セット",
+    "aliases": [
+      "メダマヤキ",
+      "目玉焼き"
+    ],
+    "rating": 5,
+    "compatiblePrinters": [
+      "EW-056A",
+      "EW-456A"
+    ],
+    "variants": [
+      {
+        "id": "med-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-avgall2",
+        "label": "自由選択2個",
+        "price": 749,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-avgall3",
+        "label": "自由選択3個",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set1",
+        "label": "1SET売価",
+        "price": 1299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-pgbk4",
+        "label": "黒4",
+        "price": 1399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-pgbk8",
+        "label": "黒8",
+        "price": 2499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-avg10",
+        "label": "カラー自由10個",
+        "price": 2599,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-pgbk12",
+        "label": "黒12",
+        "price": 3599,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set3",
+        "label": "3SET売価",
+        "price": 3199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-pgbk20",
+        "label": "黒20",
+        "price": 6099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set5",
+        "label": "5SET売価",
+        "price": 5599,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set10",
+        "label": "10SET売価",
+        "price": 10999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set1-pgbk2",
+        "label": "1SET＋黒2",
+        "price": 1949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set3-pgbk6",
+        "label": "4色+黒2×3",
+        "price": 5699,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set5-pgbk10",
+        "label": "4色+黒2×5",
+        "price": 8999,
         "stock": "在庫あり"
       }
     ]
@@ -47,29 +215,93 @@
     "image": "images/products/placeholder.svg",
     "name": "SAT（サツマイモ）互換セット",
     "aliases": [
+      "サツマイモ",
       "さつまいも"
     ],
     "rating": 5,
     "compatiblePrinters": [
-      "EW-452A"
+      "EP-712A",
+      "EP-713A",
+      "EP-714A",
+      "EP-715A",
+      "EP-716A",
+      "EP-812A",
+      "EP-813A",
+      "EP-814A",
+      "EP-815A",
+      "EP-816A"
     ],
     "variants": [
       {
-        "id": "sat-1set",
-        "label": "1セット",
-        "price": 2280,
+        "id": "sat-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
         "stock": "在庫あり"
       },
       {
-        "id": "sat-3set",
-        "label": "3セット",
-        "price": 6480,
+        "id": "sat-avgall2",
+        "label": "自由選択2個",
+        "price": 699,
         "stock": "在庫あり"
       },
       {
-        "id": "sat-black4",
-        "label": "ブラック4本",
-        "price": 2980,
+        "id": "sat-avgall3",
+        "label": "自由選択3個",
+        "price": 949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-bk4",
+        "label": "黒4個",
+        "price": 1199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set1",
+        "label": "6色1set",
+        "price": 1499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-bk8",
+        "label": "黒8",
+        "price": 2199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set2",
+        "label": "6色2set",
+        "price": 2899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-bk20",
+        "label": "黒20",
+        "price": 5299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set5",
+        "label": "5SET売価",
+        "price": 6999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set10",
+        "label": "10SET売価",
+        "price": 13499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set1-bk2",
+        "label": "6色+黒2",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "sat-set3-bk6",
+        "label": "6色+黒2×3",
+        "price": 5799,
         "stock": "在庫あり"
       }
     ]
@@ -83,19 +315,361 @@
     ],
     "rating": 4,
     "compatiblePrinters": [
-      "EW-052A"
+      "EP-881AB",
+      "EP-881AN",
+      "EP-881AR",
+      "EP-881AW",
+      "EP-882AB",
+      "EP-882AR",
+      "EP-882AW",
+      "EP-883AB",
+      "EP-883AR",
+      "EP-883AW",
+      "EP-884AB",
+      "EP-884AR",
+      "EP-884AW",
+      "EP-885AB",
+      "EP-885AR",
+      "EP-885AW",
+      "EP-886AB",
+      "EP-886AR",
+      "EP-886AW"
     ],
     "variants": [
       {
-        "id": "kam-1set",
-        "label": "1セット",
-        "price": 2180,
+        "id": "kam-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
         "stock": "在庫あり"
       },
       {
-        "id": "kam-3set",
-        "label": "3セット",
-        "price": 5980,
+        "id": "kam-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-avgall3",
+        "label": "自由選択3個",
+        "price": 849,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk4",
+        "label": "黒4個",
+        "price": 1149,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set1",
+        "label": "6色1set",
+        "price": 1549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk8",
+        "label": "黒8",
+        "price": 1949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-avg10",
+        "label": "カラー自由10個",
+        "price": 2399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set2",
+        "label": "6色2set",
+        "price": 2799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk20",
+        "label": "黒20",
+        "price": 4899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set5",
+        "label": "5SET売価",
+        "price": 6949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set10",
+        "label": "6色10SET(60本)",
+        "price": 13249,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set1-bk2",
+        "label": "1SET黒2*1",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set3-bk6",
+        "label": "1SET黒2*3",
+        "price": 5799,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "BCI380",
+    "image": "images/products/placeholder.svg",
+    "name": "Canon BCI-380/381 互換セット",
+    "aliases": [
+      "BCI-380",
+      "BCI-381",
+      "BCI380XL",
+      "BCI381XL",
+      "380",
+      "381"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "PIXUS TR703",
+      "PIXUS TR7530",
+      "PIXUS TR8530",
+      "PIXUS TS6130",
+      "PIXUS TS6230",
+      "PIXUS TS6330",
+      "PIXUS TS7330",
+      "PIXUS TS7430",
+      "PIXUS TS8130",
+      "PIXUS TS8230",
+      "PIXUS TS8330",
+      "PIXUS TS8430",
+      "TR8630",
+      "TR9530"
+    ],
+    "variants": [
+      {
+        "id": "bci380-avgall1",
+        "label": "自由選択1個",
+        "price": 399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-avgall2",
+        "label": "自由選択2個",
+        "price": 549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-avgall3",
+        "label": "自由選択3個",
+        "price": 699,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-pgbk4",
+        "label": "黒4個",
+        "price": 989,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set51",
+        "label": "5色1set",
+        "price": 989,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set61",
+        "label": "6色1set",
+        "price": 1259,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-pgbk10",
+        "label": "黒10個",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set53",
+        "label": "5色3SET",
+        "price": 2609,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set63",
+        "label": "6色3SET",
+        "price": 3299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set55",
+        "label": "5色5SET",
+        "price": 4319,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set65",
+        "label": "6色5SET",
+        "price": 5579,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set510",
+        "label": "5色10SET",
+        "price": 8099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-set610",
+        "label": "6色10SET",
+        "price": 10799,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "BCI370",
+    "image": "images/products/placeholder.svg",
+    "name": "Canon BCI-370/371 互換セット",
+    "aliases": [
+      "BCI-370",
+      "BCI-371",
+      "BCI370XL",
+      "BCI371XL",
+      "370",
+      "371"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "MG5730",
+      "MG6930",
+      "MG7730",
+      "MG7730F",
+      "TS5030",
+      "TS5030S",
+      "TS6030",
+      "TS8030",
+      "TS9030"
+    ],
+    "variants": [
+      {
+        "id": "bci370-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-pgbk4",
+        "label": "黒4個",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-set1",
+        "label": "5色1set",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-set3",
+        "label": "5色3SET",
+        "price": 2399,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "BCI350",
+    "image": "images/products/placeholder.svg",
+    "name": "Canon BCI-350/351 互換セット",
+    "aliases": [
+      "BCI-350",
+      "BCI-351",
+      "BCI350XL",
+      "BCI351XL",
+      "350",
+      "351"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "PIXUS MG5430",
+      "PIXUS MG5530",
+      "PIXUS MG5630",
+      "PIXUS MG6330",
+      "PIXUS MG6530",
+      "PIXUS MG6730",
+      "PIXUS MG7130",
+      "PIXUS MG7530",
+      "PIXUS MG7530F",
+      "PIXUS MX923",
+      "PIXUS iP7230",
+      "PIXUS iP8730",
+      "PIXUS iX6830"
+    ],
+    "variants": [
+      {
+        "id": "bci350-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-pgbk4",
+        "label": "黒(PGBK)4個",
+        "price": 888,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set1",
+        "label": "5色1SET(5本)",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-pgbk10",
+        "label": "黒10個",
+        "price": 1899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set3",
+        "label": "5色3SET(15本)",
+        "price": 2249,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set5",
+        "label": "5色5SET",
+        "price": 3999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set10",
+        "label": "5色10SET",
+        "price": 7999,
         "stock": "在庫あり"
       }
     ]
@@ -103,57 +677,492 @@
   {
     "code": "LC411",
     "image": "images/products/placeholder.svg",
-    "name": "LC411 互換セット",
+    "name": "brother LC411 互換セット",
     "aliases": [
       "LC411XL"
     ],
     "rating": 4,
     "compatiblePrinters": [
-      "DCP-J928N",
-      "DCP-J926N",
-      "MFC-J739DN"
+      "DCP-J1800N",
+      "DCP-J526N",
+      "DCP-J528N",
+      "DCP-J914N",
+      "DCP-J915N",
+      "DCP-J926N-B",
+      "DCP-J926N-W",
+      "DCP-J928N-B",
+      "DCP-J928N-W",
+      "MFC-J739DN",
+      "MFC-J739DWN",
+      "MFC-J904N",
+      "MFC-J905N",
+      "MFC-J939DN",
+      "MFC-J939DWN"
     ],
     "variants": [
       {
-        "id": "lc411-1set",
-        "label": "1セット",
-        "price": 1980,
+        "id": "lc411-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
         "stock": "在庫あり"
       },
       {
-        "id": "lc411-3set",
-        "label": "3セット",
-        "price": 5480,
+        "id": "lc411-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
         "stock": "在庫あり"
       },
       {
-        "id": "lc411-black4",
-        "label": "ブラック4本",
-        "price": 2680,
+        "id": "lc411-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-set1",
+        "label": "4色1SET(4本)",
+        "price": 1049,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-bk4",
+        "label": "黒4",
+        "price": 1099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-set2",
+        "label": "4色2SET(8本)",
+        "price": 1799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-bk10",
+        "label": "黒10個",
+        "price": 2299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-set5",
+        "label": "4色5SET",
+        "price": 4399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-set10",
+        "label": "4色10SET",
+        "price": 8099,
         "stock": "在庫あり"
       }
     ]
   },
   {
-    "code": "MUG",
+    "code": "BC-BASE",
     "image": "images/products/placeholder.svg",
-    "name": "MUG（マグカップ）互換セット",
+    "name": "Canon BC-310/345/365 互換セット",
     "aliases": [
-      "マグカップ"
+      "BC-310",
+      "BC-345",
+      "BC-365",
+      "BC-346",
+      "BC-366",
+      "BC310",
+      "BC345",
+      "BC365"
     ],
-    "rating": 5,
-    "compatiblePrinters": [],
+    "rating": 4,
+    "compatiblePrinters": [
+      "MP27",
+      "MP280",
+      "MP480",
+      "MP490",
+      "MX350",
+      "MX420",
+      "PIXUS MP493",
+      "PIXUS TS3330",
+      "PIXUS TS3730",
+      "TR4530",
+      "TS203",
+      "TS3130",
+      "TS3130S",
+      "TS3530",
+      "iP2700"
+    ],
     "variants": [
       {
-        "id": "mug-1set",
-        "label": "1セット",
-        "price": 2380,
+        "id": "bc-base-avgall1",
+        "label": "自由選択1個",
+        "price": 999,
         "stock": "在庫あり"
       },
       {
-        "id": "mug-3set",
-        "label": "3セット",
-        "price": 6680,
+        "id": "bc-base-avgall2",
+        "label": "自由選択2個",
+        "price": 1399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-baseavg2",
+        "label": "黒2個(自由:黒/カラー選択可)",
+        "price": 1499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-set1",
+        "label": "1SET売価",
+        "price": 1399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-set2",
+        "label": "2SET売価",
+        "price": 2399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-baseavg10",
+        "label": "自由選択10個",
+        "price": 5799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-baseavg20",
+        "label": "自由選択20個",
+        "price": 11749,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "LC3111",
+    "image": "images/products/placeholder.svg",
+    "name": "brother LC3111 互換セット",
+    "aliases": [
+      "LC3111XL"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "DCP-J572N",
+      "DCP-J577N",
+      "DCP-J582N",
+      "DCP-J587N",
+      "DCP-J972N",
+      "DCP-J973N",
+      "DCP-J978N",
+      "DCP-J981N",
+      "DCP-J982N",
+      "DCP-J987N",
+      "MFC-J738DN",
+      "MFC-J738DN/DWN",
+      "MFC-J893N",
+      "MFC-J898N",
+      "MFC-J903N",
+      "MFC-J998DN",
+      "MFC-J998DN/DWN"
+    ],
+    "variants": [
+      {
+        "id": "lc3111-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-avgall2",
+        "label": "自由選択2個",
+        "price": 749,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-avgall3",
+        "label": "自由選択3個",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-bk4",
+        "label": "黒4",
+        "price": 1199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set1",
+        "label": "1SET売価",
+        "price": 1199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set2",
+        "label": "2SET売価",
+        "price": 2099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-bk10",
+        "label": "黒10個",
+        "price": 2949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set5",
+        "label": "4色5SET",
+        "price": 5299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set10",
+        "label": "4色10SET",
+        "price": 9999,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "LC211",
+    "image": "images/products/placeholder.svg",
+    "name": "brother LC211 互換セット",
+    "aliases": [
+      "LC211XL"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "DCP-J562N",
+      "DCP-J567N",
+      "DCP-J762N",
+      "DCP-J767N",
+      "DCP-J962N",
+      "DCP-J963N",
+      "DCP-J968N",
+      "MFC-J730DN/DWN",
+      "MFC-J737DN/DWN",
+      "MFC-J830DN/DWN",
+      "MFC-J837DN/DWN",
+      "MFC-J880N",
+      "MFC-J887N",
+      "MFC-J900DN/DWN",
+      "MFC-J907DN/DWN",
+      "MFC-J990DN/DWN",
+      "MFC-J997DN/DWN"
+    ],
+    "variants": [
+      {
+        "id": "lc211-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-avgall3",
+        "label": "自由選択3個",
+        "price": 849,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-bk4",
+        "label": "黒4",
+        "price": 1099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set1",
+        "label": "1SET売価",
+        "price": 1099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set2",
+        "label": "2SET売価",
+        "price": 1899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-bk10",
+        "label": "黒10個",
+        "price": 2499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set5",
+        "label": "4色5SET",
+        "price": 4799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set10",
+        "label": "4色10SET",
+        "price": 8899,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "LC111",
+    "image": "images/products/placeholder.svg",
+    "name": "brother LC111 互換セット",
+    "aliases": [
+      "LC111XL"
+    ],
+    "rating": 4,
+    "compatiblePrinters": [
+      "DCP-J552N",
+      "DCP-J557N",
+      "DCP-J752N",
+      "DCP-J757N",
+      "DCP-J952N",
+      "DCP-J957N",
+      "MFC-J720D/DWN",
+      "MFC-J727D/DWN",
+      "MFC-J820DN/DWN",
+      "MFC-J827DN/DWN",
+      "MFC-J870N",
+      "MFC-J877N",
+      "MFC-J890DN",
+      "MFC-J897DN",
+      "MFC-J980DN/DWN",
+      "MFC-J987DN/DWN"
+    ],
+    "variants": [
+      {
+        "id": "lc111-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-avgall3",
+        "label": "自由選択3個",
+        "price": 849,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-bk4",
+        "label": "黒4",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set1",
+        "label": "1SET売価",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set2",
+        "label": "2SET売価",
+        "price": 1799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-bk10",
+        "label": "黒10個",
+        "price": 2199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set5",
+        "label": "4色5SET",
+        "price": 4299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set10",
+        "label": "4色10SET",
+        "price": 7999,
+        "stock": "在庫あり"
+      }
+    ]
+  },
+  {
+    "code": "IC6CL80L",
+    "image": "images/products/placeholder.svg",
+    "name": "EPSON IC6CL80L（とうもろこし）互換セット",
+    "aliases": [
+      "とうもろこし",
+      "IC80L",
+      "ICBK80L"
+    ],
+    "rating": 5,
+    "compatiblePrinters": [
+      "EP-707A",
+      "EP-708A",
+      "EP-777A",
+      "EP-807AB",
+      "EP-807AR",
+      "EP-807AW",
+      "EP-808AB",
+      "EP-808AR",
+      "EP-808AW",
+      "EP-907F",
+      "EP-977A3",
+      "EP-978A",
+      "EP-979A3",
+      "EP-982A3"
+    ],
+    "variants": [
+      {
+        "id": "ic6cl80l-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-avgall2",
+        "label": "自由選択2個",
+        "price": 549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-avgall3",
+        "label": "自由選択3個",
+        "price": 699,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-bk4",
+        "label": "黒4個",
+        "price": 849,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set1",
+        "label": "6色1set",
+        "price": 1149,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set2",
+        "label": "6色2set",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-黒(大容量)20",
+        "label": "黒20個",
+        "price": 6499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set5",
+        "label": "5SET売価",
+        "price": 4999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set10",
+        "label": "10SET売価",
+        "price": 9499,
         "stock": "在庫あり"
       }
     ]
