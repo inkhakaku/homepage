@@ -37,7 +37,6 @@ const UI = (() => {
           '<img class="product-thumb" src="' + escapeHtml(imageSrc) + '" alt="' + escapeHtml(ink.name) + '">' +
           '<div class="result-card-heading">' +
             '<h3>' + escapeHtml(ink.name) + '</h3>' +
-            '<div class="stars">' + starString(ink.rating) + '</div>' +
             (compat ? '<div class="compat-list">' + escapeHtml(compat) + '</div>' : '') +
           '</div>' +
         '</div>' +
