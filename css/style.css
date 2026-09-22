@@ -258,8 +258,8 @@ body {
 }
 .result-card-top { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 16px; }
 .product-thumb {
-  width: 300px;
-  height: 300px;
+  width: 140px;
+  height: 140px;
   flex-shrink: 0;
   border-radius: 3px;
   border: 1px solid var(--cream-100);
