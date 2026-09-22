@@ -1,7 +1,7 @@
 [
   {
     "code": "MUG",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/MUG.png",
     "name": "MUG（マグカップ）互換セット",
     "aliases": [
       "マグカップ"
@@ -106,7 +106,7 @@
   },
   {
     "code": "MED",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/MED.png",
     "name": "MED（メダマヤキ）互換セット",
     "aliases": [
       "メダマヤキ",
@@ -212,7 +212,7 @@
   },
   {
     "code": "SAT",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/SAT.png",
     "name": "SAT（サツマイモ）互換セット",
     "aliases": [
       "サツマイモ",
@@ -308,7 +308,7 @@
   },
   {
     "code": "KAM",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/KAM.png",
     "name": "KAM（カメ）互換セット",
     "aliases": [
       "カメ"
@@ -418,7 +418,7 @@
   },
   {
     "code": "BCI380",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/BCI380.png",
     "name": "Canon BCI-380/381 互換セット",
     "aliases": [
       "BCI-380",
@@ -528,7 +528,7 @@
   },
   {
     "code": "BCI370",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/BCI370.png",
     "name": "Canon BCI-370/371 互換セット",
     "aliases": [
       "BCI-370",
@@ -591,7 +591,7 @@
   },
   {
     "code": "BCI350",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/BCI350.png",
     "name": "Canon BCI-350/351 互換セット",
     "aliases": [
       "BCI-350",
@@ -676,7 +676,7 @@
   },
   {
     "code": "LC411",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/LC411.png",
     "name": "brother LC411 互換セット",
     "aliases": [
       "LC411XL"
@@ -758,7 +758,7 @@
   },
   {
     "code": "BC-BASE",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/BC-BASE.png",
     "name": "Canon BC-310/345/365 互換セット",
     "aliases": [
       "BC-310",
@@ -835,7 +835,7 @@
   },
   {
     "code": "LC3111",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/LC3111.png",
     "name": "brother LC3111 互換セット",
     "aliases": [
       "LC3111XL"
@@ -919,7 +919,7 @@
   },
   {
     "code": "LC211",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/LC211.png",
     "name": "brother LC211 互換セット",
     "aliases": [
       "LC211XL"
@@ -1003,7 +1003,7 @@
   },
   {
     "code": "LC111",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/LC111.png",
     "name": "brother LC111 互換セット",
     "aliases": [
       "LC111XL"
@@ -1086,7 +1086,7 @@
   },
   {
     "code": "IC6CL80L",
-    "image": "images/products/placeholder.svg",
+    "image": "images/products/IC6CL80L.png",
     "name": "EPSON IC6CL80L（とうもろこし）互換セット",
     "aliases": [
       "とうもろこし",
