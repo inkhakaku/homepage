@@ -46,6 +46,7 @@ export default {
       try {
         const body = await request.json();
         const variantId = body.variantId;
+        const colors = Array.isArray(body.colors) ? body.colors.filter(c => typeof c === "string" && c.trim()) : [];
 
         if (!variantId) {
           return new Response(
@@ -115,6 +116,31 @@ export default {
           );
         }
 
+        // 色選択が必要な商品の場合、選択数が正しいか確認
+        if (selectedVariant.colorPick) {
+          const needed = selectedVariant.colorPick.count;
+          if (colors.length !== needed) {
+            return new Response(
+              JSON.stringify({
+                error: `色を${needed}個選択してください`,
+              }),
+              {
+                status: 400,
+                headers: {
+                  "Content-Type": "application/json",
+                  ...corsHeaders,
+                },
+              }
+            );
+          }
+        }
+
+        // 商品名（バリエーション名＋選択色を含める）
+        let productName = `${selectedInk.name} ${selectedVariant.label}`;
+        if (colors.length) {
+          productName += `（${colors.join("・")}）`;
+        }
+
         // Stripe Checkout Session作成
         const stripeResponse = await fetch(
           "https://api.stripe.com/v1/checkout/sessions",
@@ -130,7 +156,7 @@ export default {
               "line_items[0][price_data][currency]": "jpy",
 
               "line_items[0][price_data][product_data][name]":
-                selectedInk.name,
+                productName,
 
               "line_items[0][price_data][unit_amount]":
                 String(selectedVariant.price),
