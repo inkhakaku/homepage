@@ -87,62 +87,32 @@ const UI = (() => {
         : ink.colorOptions;
 
       colorPickerEl.style.display = 'block';
+
+      let rowsHtml = '';
+      for (let i = 0; i < needed; i++) {
+        rowsHtml +=
+          '<div class="color-select-row">' +
+            '<label class="color-select-label" for="color-select-' + i + '">インク' + (i + 1) + '（クリックして選択）</label>' +
+            '<select class="color-select" id="color-select-' + i + '" data-index="' + i + '">' +
+              options.map(c => '<option value="' + escapeHtml(c.id) + '">' + escapeHtml(c.label) + '</option>').join('') +
+            '</select>' +
+          '</div>';
+      }
+
       colorPickerEl.innerHTML =
-        '<div class="color-picker-lead">色を' + needed + '個選んでください（同じ色を複数回選べます）</div>' +
-        '<div class="color-chip-row">' +
-          options.map(c =>
-            '<button type="button" class="color-chip" data-color-id="' + escapeHtml(c.id) + '" data-color-label="' + escapeHtml(c.label) + '">' +
-              '<span class="color-chip-label">' + escapeHtml(c.label) + '</span>' +
-              '<span class="color-chip-count" style="display:none;"></span>' +
-            '</button>'
-          ).join('') +
-        '</div>' +
-        '<div class="color-selected-row"></div>';
+        '<div class="color-picker-lead">色を' + needed + '個選んでください</div>' +
+        '<div class="color-select-list">' + rowsHtml + '</div>';
 
-      const selectedRow = colorPickerEl.querySelector('.color-selected-row');
+      // 初期値はすべて1番目の色
+      selectedColors = options.length
+        ? Array.from({ length: needed }, () => ({ id: options[0].id, label: options[0].label }))
+        : [];
 
-      function renderSelectedRow() {
-        selectedRow.innerHTML = selectedColors.map((c, i) =>
-          '<span class="color-selected-tag">' + escapeHtml(c.label) +
-            '<button type="button" class="color-remove-btn" data-index="' + i + '" aria-label="削除">×</button>' +
-          '</span>'
-        ).join('');
-
-        selectedRow.querySelectorAll('.color-remove-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const i = Number(btn.dataset.index);
-            selectedColors.splice(i, 1);
-            refreshChipCounts();
-            renderSelectedRow();
-            updateBuyState();
-          });
-        });
-      }
-
-      function refreshChipCounts() {
-        colorPickerEl.querySelectorAll('.color-chip').forEach(chip => {
-          const id = chip.dataset.colorId;
-          const count = selectedColors.filter(c => c.id === id).length;
-          const countEl = chip.querySelector('.color-chip-count');
-          if (count > 0) {
-            countEl.style.display = 'inline';
-            countEl.textContent = '×' + count;
-            chip.classList.add('is-selected');
-          } else {
-            countEl.style.display = 'none';
-            chip.classList.remove('is-selected');
-          }
-        });
-      }
-
-      colorPickerEl.querySelectorAll('.color-chip').forEach(chip => {
-        chip.addEventListener('click', () => {
-          if (selectedColors.length >= needed) return;
-          const id = chip.dataset.colorId;
-          const label = chip.dataset.colorLabel;
-          selectedColors.push({ id, label });
-          refreshChipCounts();
-          renderSelectedRow();
+      colorPickerEl.querySelectorAll('.color-select').forEach(sel => {
+        sel.addEventListener('change', () => {
+          const i = Number(sel.dataset.index);
+          const opt = options.find(c => c.id === sel.value);
+          if (opt) selectedColors[i] = { id: opt.id, label: opt.label };
           updateBuyState();
         });
       });
