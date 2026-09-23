@@ -88,28 +88,61 @@ const UI = (() => {
 
       colorPickerEl.style.display = 'block';
       colorPickerEl.innerHTML =
-        '<div class="color-picker-lead">色を' + needed + '個選んでください</div>' +
+        '<div class="color-picker-lead">色を' + needed + '個選んでください（同じ色を複数回選べます）</div>' +
         '<div class="color-chip-row">' +
           options.map(c =>
-            '<button type="button" class="color-chip" data-color-id="' + escapeHtml(c.id) + '" data-color-label="' + escapeHtml(c.label) + '">' + escapeHtml(c.label) + '</button>'
+            '<button type="button" class="color-chip" data-color-id="' + escapeHtml(c.id) + '" data-color-label="' + escapeHtml(c.label) + '">' +
+              '<span class="color-chip-label">' + escapeHtml(c.label) + '</span>' +
+              '<span class="color-chip-count" style="display:none;"></span>' +
+            '</button>'
           ).join('') +
-        '</div>';
+        '</div>' +
+        '<div class="color-selected-row"></div>';
+
+      const selectedRow = colorPickerEl.querySelector('.color-selected-row');
+
+      function renderSelectedRow() {
+        selectedRow.innerHTML = selectedColors.map((c, i) =>
+          '<span class="color-selected-tag">' + escapeHtml(c.label) +
+            '<button type="button" class="color-remove-btn" data-index="' + i + '" aria-label="削除">×</button>' +
+          '</span>'
+        ).join('');
+
+        selectedRow.querySelectorAll('.color-remove-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const i = Number(btn.dataset.index);
+            selectedColors.splice(i, 1);
+            refreshChipCounts();
+            renderSelectedRow();
+            updateBuyState();
+          });
+        });
+      }
+
+      function refreshChipCounts() {
+        colorPickerEl.querySelectorAll('.color-chip').forEach(chip => {
+          const id = chip.dataset.colorId;
+          const count = selectedColors.filter(c => c.id === id).length;
+          const countEl = chip.querySelector('.color-chip-count');
+          if (count > 0) {
+            countEl.style.display = 'inline';
+            countEl.textContent = '×' + count;
+            chip.classList.add('is-selected');
+          } else {
+            countEl.style.display = 'none';
+            chip.classList.remove('is-selected');
+          }
+        });
+      }
 
       colorPickerEl.querySelectorAll('.color-chip').forEach(chip => {
         chip.addEventListener('click', () => {
+          if (selectedColors.length >= needed) return;
           const id = chip.dataset.colorId;
           const label = chip.dataset.colorLabel;
-          const idx = selectedColors.findIndex(c => c.id === id);
-
-          if (idx !== -1) {
-            selectedColors.splice(idx, 1);
-            chip.classList.remove('is-selected');
-          } else {
-            if (selectedColors.length >= needed) return;
-            selectedColors.push({ id, label });
-            chip.classList.add('is-selected');
-          }
-
+          selectedColors.push({ id, label });
+          refreshChipCounts();
+          renderSelectedRow();
           updateBuyState();
         });
       });
