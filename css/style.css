@@ -352,3 +352,31 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
+.color-chip-count {
+  margin-left: 4px;
+  font-weight: 700;
+}
+.color-selected-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.color-selected-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  background: var(--cream-100);
+  color: var(--wine-900);
+  padding: 5px 6px 5px 12px;
+  border-radius: 14px;
+}
+.color-remove-btn {
+  background: none;
+  color: var(--wine-700);
+  font-size: 13px;
+  line-height: 1;
+  padding: 2px 4px;
+}
+.color-remove-btn:hover { color: var(--wine-900); }
