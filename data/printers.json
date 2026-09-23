@@ -1,10 +1,654 @@
 [
-  { "model": "TS8430", "maker": "Canon", "inkCode": "BCI381+380" },
-  { "model": "TS8630", "maker": "Canon", "inkCode": "BCI381+380" },
-  { "model": "TS8730", "maker": "Canon", "inkCode": "BCI381+380" },
-  { "model": "EW-452A", "maker": "Epson", "inkCode": "SAT" },
-  { "model": "EW-052A", "maker": "Epson", "inkCode": "KAM" },
-  { "model": "DCP-J928N", "maker": "Brother", "inkCode": "LC411" },
-  { "model": "DCP-J926N", "maker": "Brother", "inkCode": "LC411" },
-  { "model": "MFC-J739DN", "maker": "Brother", "inkCode": "LC411" }
+  {
+    "model": "EW-052A",
+    "inkCode": "MUG"
+  },
+  {
+    "model": "EW-452A",
+    "inkCode": "MUG"
+  },
+  {
+    "model": "EW-056A",
+    "inkCode": "MED"
+  },
+  {
+    "model": "EW-456A",
+    "inkCode": "MED"
+  },
+  {
+    "model": "EP-712A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-713A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-714A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-715A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-716A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-812A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-813A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-814A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-815A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-816A",
+    "inkCode": "SAT"
+  },
+  {
+    "model": "EP-881AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-881AN",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-881AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-881AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-882AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-882AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-882AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-883AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-883AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-883AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-884AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-884AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-884AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-885AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-885AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-885AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-886AB",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-886AR",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "EP-886AW",
+    "inkCode": "KAM"
+  },
+  {
+    "model": "PIXUS TR703",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TR7530",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TR8530",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS6130",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS6230",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS6330",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS7330",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS7430",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS8130",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS8230",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS8330",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "PIXUS TS8430",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "TR8630",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "TR9530",
+    "inkCode": "BCI380"
+  },
+  {
+    "model": "MG5730",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "MG6930",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "MG7730",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "MG7730F",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "TS5030",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "TS5030S",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "TS6030",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "TS8030",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "TS9030",
+    "inkCode": "BCI370"
+  },
+  {
+    "model": "PIXUS MG5430",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG5530",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG5630",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG6330",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG6530",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG6730",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG7130",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG7530",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MG7530F",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS MX923",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS iP7230",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS iP8730",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "PIXUS iX6830",
+    "inkCode": "BCI350"
+  },
+  {
+    "model": "DCP-J1800N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J526N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J528N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J914N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J915N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J926N-B",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J926N-W",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J928N-B",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "DCP-J928N-W",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J739DN",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J739DWN",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J904N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J905N",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J939DN",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MFC-J939DWN",
+    "inkCode": "LC411"
+  },
+  {
+    "model": "MP27",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "MP280",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "MP480",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "MP490",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "MX350",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "MX420",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "PIXUS MP493",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "PIXUS TS3330",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "PIXUS TS3730",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "TR4530",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "TS203",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "TS3130",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "TS3130S",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "TS3530",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "iP2700",
+    "inkCode": "BC-BASE"
+  },
+  {
+    "model": "DCP-J572N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J577N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J582N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J587N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J972N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J973N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J978N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J981N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J982N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J987N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J738DN",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J738DN/DWN",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J893N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J898N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J903N",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J998DN",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "MFC-J998DN/DWN",
+    "inkCode": "LC3111"
+  },
+  {
+    "model": "DCP-J562N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J567N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J762N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J767N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J962N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J963N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J968N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J730DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J737DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J830DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J837DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J880N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J887N",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J900DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J907DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J990DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "MFC-J997DN/DWN",
+    "inkCode": "LC211"
+  },
+  {
+    "model": "DCP-J552N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "DCP-J557N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "DCP-J752N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "DCP-J757N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "DCP-J952N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "DCP-J957N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J720D/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J727D/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J820DN/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J827DN/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J870N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J877N",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J890DN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J897DN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J980DN/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "MFC-J987DN/DWN",
+    "inkCode": "LC111"
+  },
+  {
+    "model": "EP-707A",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-708A",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-777A",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-807AB",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-807AR",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-807AW",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-808AB",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-808AR",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-808AW",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-907F",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-977A3",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-978A",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-979A3",
+    "inkCode": "IC6CL80L"
+  },
+  {
+    "model": "EP-982A3",
+    "inkCode": "IC6CL80L"
+  }
 ]
