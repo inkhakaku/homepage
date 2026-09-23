@@ -1,12 +1,8 @@
-/* ui.js — 検索結果カードの描画、最近検索した型番の表示（一覧画面は使わない） */
+/* ui.js — 検索結果カードの描画、色選択UI、最近検索した型番の表示 */
 
 const UI = (() => {
   const RECENT_KEY = 'inkkakakuou_recent_v1';
   const MAX_RECENT = 6;
-
-  function starString(rating) {
-    return '★'.repeat(rating) + '☆'.repeat(5 - rating);
-  }
 
   function renderResult(container, queryDisplay, ink) {
     if (!ink) {
@@ -41,21 +37,99 @@ const UI = (() => {
           '</div>' +
         '</div>' +
         '<div class="variant-grid">' + variantHtml + '</div>' +
+        '<div class="color-picker" style="display:none;"></div>' +
         '<button class="buy-btn" type="button">購入する</button>' +
       '</div>';
 
     const card = container.querySelector('.result-card');
     const variants = card.querySelectorAll('.variant');
+    const colorPickerEl = card.querySelector('.color-picker');
+    const buyButton = card.querySelector('.buy-btn');
+
+    let selectedColors = [];
+
+    function getVariant(id) {
+      return ink.variants.find(v => v.id === id);
+    }
+
+    function updateBuyState() {
+      const selected = card.querySelector('.variant.is-selected');
+      const variant = selected ? getVariant(selected.dataset.variantId) : null;
+
+      if (variant && variant.colorPick) {
+        const needed = variant.colorPick.count;
+        buyButton.disabled = selectedColors.length !== needed;
+        if (buyButton.disabled) {
+          buyButton.textContent = '色を選んでください（' + selectedColors.length + '/' + needed + '）';
+        } else {
+          buyButton.textContent = '購入する';
+        }
+      } else {
+        buyButton.disabled = false;
+        buyButton.textContent = '購入する';
+      }
+    }
+
+    function renderColorPicker(variant) {
+      selectedColors = [];
+
+      if (!variant || !variant.colorPick || !ink.colorOptions || !ink.colorOptions.length) {
+        colorPickerEl.style.display = 'none';
+        colorPickerEl.innerHTML = '';
+        updateBuyState();
+        return;
+      }
+
+      const needed = variant.colorPick.count;
+      const scope = variant.colorPick.scope;
+      const options = scope === 'colorOnly'
+        ? ink.colorOptions.filter(c => c.id !== 'black')
+        : ink.colorOptions;
+
+      colorPickerEl.style.display = 'block';
+      colorPickerEl.innerHTML =
+        '<div class="color-picker-lead">色を' + needed + '個選んでください</div>' +
+        '<div class="color-chip-row">' +
+          options.map(c =>
+            '<button type="button" class="color-chip" data-color-id="' + escapeHtml(c.id) + '" data-color-label="' + escapeHtml(c.label) + '">' + escapeHtml(c.label) + '</button>'
+          ).join('') +
+        '</div>';
+
+      colorPickerEl.querySelectorAll('.color-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const id = chip.dataset.colorId;
+          const label = chip.dataset.colorLabel;
+          const idx = selectedColors.findIndex(c => c.id === id);
+
+          if (idx !== -1) {
+            selectedColors.splice(idx, 1);
+            chip.classList.remove('is-selected');
+          } else {
+            if (selectedColors.length >= needed) return;
+            selectedColors.push({ id, label });
+            chip.classList.add('is-selected');
+          }
+
+          updateBuyState();
+        });
+      });
+
+      updateBuyState();
+    }
 
     variants.forEach(v => {
       v.addEventListener('click', () => {
         variants.forEach(x => x.classList.remove('is-selected'));
         v.classList.add('is-selected');
+        renderColorPicker(getVariant(v.dataset.variantId));
       });
     });
 
+    // 初期表示（1件目のバリエーション）
+    renderColorPicker(getVariant(variants[0].dataset.variantId));
+
     // Stripe Checkoutへ移動
-    card.querySelector('.buy-btn').addEventListener('click', async () => {
+    buyButton.addEventListener('click', async () => {
       const selected = card.querySelector('.variant.is-selected');
 
       if (!selected) {
@@ -63,8 +137,15 @@ const UI = (() => {
         return;
       }
 
+      const variant = getVariant(selected.dataset.variantId);
+
+      if (variant.colorPick && selectedColors.length !== variant.colorPick.count) {
+        alert('色を' + variant.colorPick.count + '個選んでください。');
+        return;
+      }
+
       const variantId = selected.dataset.variantId;
-      const buyButton = card.querySelector('.buy-btn');
+      const colorLabels = selectedColors.map(c => c.label);
 
       try {
         buyButton.disabled = true;
@@ -76,7 +157,8 @@ const UI = (() => {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            variantId: variantId
+            variantId: variantId,
+            colors: colorLabels
           })
         });
 
