@@ -11,24 +11,54 @@
       "EW-052A",
       "EW-452A"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（顔料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "mug-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "mug-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "mug-avgall3",
         "label": "自由選択3個",
         "price": 799,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "mug-pgbk4",
@@ -52,7 +82,11 @@
         "id": "mug-avg10",
         "label": "カラー自由10個",
         "price": 2099,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "colorOnly"
+        }
       },
       {
         "id": "mug-pgbk12",
@@ -117,24 +151,54 @@
       "EW-056A",
       "EW-456A"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（顔料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "med-avgall1",
         "label": "自由選択1個",
         "price": 499,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "med-avgall2",
         "label": "自由選択2個",
         "price": 749,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "med-avgall3",
         "label": "自由選択3個",
         "price": 999,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "med-set1",
@@ -158,7 +222,11 @@
         "id": "med-avg10",
         "label": "カラー自由10個",
         "price": 2599,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "colorOnly"
+        }
       },
       {
         "id": "med-pgbk12",
@@ -231,24 +299,62 @@
       "EP-815A",
       "EP-816A"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      },
+      {
+        "id": "light-cyan",
+        "label": "ライトシアン（染料）"
+      },
+      {
+        "id": "light-magenta",
+        "label": "ライトマゼンタ（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "sat-avgall1",
         "label": "自由選択1個",
         "price": 499,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "sat-avgall2",
         "label": "自由選択2個",
         "price": 699,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "sat-avgall3",
         "label": "自由選択3個",
         "price": 949,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "sat-bk4",
@@ -335,24 +441,62 @@
       "EP-886AR",
       "EP-886AW"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      },
+      {
+        "id": "light-cyan",
+        "label": "ライトシアン（染料）"
+      },
+      {
+        "id": "light-magenta",
+        "label": "ライトマゼンタ（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "kam-avgall1",
         "label": "自由選択1個",
         "price": 499,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "kam-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "kam-avgall3",
         "label": "自由選択3個",
         "price": 849,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "kam-bk4",
@@ -376,7 +520,11 @@
         "id": "kam-avg10",
         "label": "カラー自由10個",
         "price": 2399,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "colorOnly"
+        }
       },
       {
         "id": "kam-set2",
@@ -446,24 +594,62 @@
       "TR8630",
       "TR9530"
     ],
+    "colorOptions": [
+      {
+        "id": "pgbk",
+        "label": "ブラック（顔料/380）"
+      },
+      {
+        "id": "bk",
+        "label": "ブラック（染料/381）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      },
+      {
+        "id": "gray",
+        "label": "グレー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "bci380-avgall1",
         "label": "自由選択1個",
         "price": 399,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "bci380-avgall2",
         "label": "自由選択2個",
         "price": 549,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "bci380-avgall3",
         "label": "自由選択3個",
         "price": 699,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "bci380-pgbk4",
@@ -551,24 +737,58 @@
       "TS8030",
       "TS9030"
     ],
+    "colorOptions": [
+      {
+        "id": "pgbk",
+        "label": "ブラック（顔料/370）"
+      },
+      {
+        "id": "bk",
+        "label": "ブラック（染料/371）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "bci370-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "bci370-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "bci370-avgall3",
         "label": "自由選択3個",
         "price": 799,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "bci370-pgbk4",
@@ -618,24 +838,58 @@
       "PIXUS iP8730",
       "PIXUS iX6830"
     ],
+    "colorOptions": [
+      {
+        "id": "pgbk",
+        "label": "ブラック（顔料/350）"
+      },
+      {
+        "id": "bk",
+        "label": "ブラック（染料/351）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "bci350-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "bci350-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "bci350-avgall3",
         "label": "自由選択3個",
         "price": 799,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "bci350-pgbk4",
@@ -700,24 +954,54 @@
       "MFC-J939DN",
       "MFC-J939DWN"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "lc411-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "lc411-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "lc411-avgall3",
         "label": "自由選択3個",
         "price": 799,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "lc411-set1",
@@ -789,24 +1073,46 @@
       "TS3530",
       "iP2700"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "color",
+        "label": "カラー3色一体（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "bc-base-avgall1",
         "label": "自由選択1個",
         "price": 999,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "bc-base-avgall2",
         "label": "自由選択2個",
         "price": 1399,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "bc-base-baseavg2",
         "label": "黒2個(自由:黒/カラー選択可)",
         "price": 1499,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "bc-base-set1",
@@ -824,13 +1130,21 @@
         "id": "bc-base-baseavg10",
         "label": "自由選択10個",
         "price": 5799,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "all"
+        }
       },
       {
         "id": "bc-base-baseavg20",
         "label": "自由選択20個",
         "price": 11749,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 20,
+          "scope": "all"
+        }
       }
     ]
   },
@@ -861,24 +1175,54 @@
       "MFC-J998DN",
       "MFC-J998DN/DWN"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "lc3111-avgall1",
         "label": "自由選択1個",
         "price": 499,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "lc3111-avgall2",
         "label": "自由選択2個",
         "price": 749,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "lc3111-avgall3",
         "label": "自由選択3個",
         "price": 999,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "lc3111-bk4",
@@ -945,24 +1289,54 @@
       "MFC-J990DN/DWN",
       "MFC-J997DN/DWN"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "lc211-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "lc211-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "lc211-avgall3",
         "label": "自由選択3個",
         "price": 849,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "lc211-bk4",
@@ -1028,24 +1402,54 @@
       "MFC-J980DN/DWN",
       "MFC-J987DN/DWN"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "lc111-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "lc111-avgall2",
         "label": "自由選択2個",
         "price": 649,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "lc111-avgall3",
         "label": "自由選択3個",
         "price": 849,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "lc111-bk4",
@@ -1111,24 +1515,62 @@
       "EP-979A3",
       "EP-982A3"
     ],
+    "colorOptions": [
+      {
+        "id": "black",
+        "label": "ブラック（染料）"
+      },
+      {
+        "id": "cyan",
+        "label": "シアン（染料）"
+      },
+      {
+        "id": "magenta",
+        "label": "マゼンタ（染料）"
+      },
+      {
+        "id": "yellow",
+        "label": "イエロー（染料）"
+      },
+      {
+        "id": "light-cyan",
+        "label": "ライトシアン（染料）"
+      },
+      {
+        "id": "light-magenta",
+        "label": "ライトマゼンタ（染料）"
+      }
+    ],
     "variants": [
       {
         "id": "ic6cl80l-avgall1",
         "label": "自由選択1個",
         "price": 449,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
       },
       {
         "id": "ic6cl80l-avgall2",
         "label": "自由選択2個",
         "price": 549,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
       },
       {
         "id": "ic6cl80l-avgall3",
         "label": "自由選択3個",
         "price": 699,
-        "stock": "在庫あり"
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       },
       {
         "id": "ic6cl80l-bk4",
