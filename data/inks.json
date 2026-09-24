@@ -31,34 +31,16 @@
     ],
     "variants": [
       {
-        "id": "mug-avgall1",
-        "label": "自由選択1個",
-        "price": 449,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 1,
-          "scope": "all"
-        }
+        "id": "mug-set1",
+        "label": "1SET売価",
+        "price": 1049,
+        "stock": "在庫あり"
       },
       {
-        "id": "mug-avgall2",
-        "label": "自由選択2個",
-        "price": 649,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 2,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "mug-avgall3",
-        "label": "自由選択3個",
-        "price": 799,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 3,
-          "scope": "all"
-        }
+        "id": "mug-set1-pgbk2",
+        "label": "1SET＋黒2",
+        "price": 1599,
+        "stock": "在庫あり"
       },
       {
         "id": "mug-pgbk4",
@@ -67,26 +49,10 @@
         "stock": "在庫あり"
       },
       {
-        "id": "mug-set1",
-        "label": "1SET売価",
-        "price": 1049,
-        "stock": "在庫あり"
-      },
-      {
         "id": "mug-pgbk8",
         "label": "黒8",
         "price": 1949,
         "stock": "在庫あり"
-      },
-      {
-        "id": "mug-avg10",
-        "label": "カラー自由10個",
-        "price": 2099,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 10,
-          "scope": "colorOnly"
-        }
       },
       {
         "id": "mug-pgbk12",
@@ -119,12 +85,6 @@
         "stock": "在庫あり"
       },
       {
-        "id": "mug-set1-pgbk2",
-        "label": "1SET＋黒2",
-        "price": 1599,
-        "stock": "在庫あり"
-      },
-      {
         "id": "mug-set3-pgbk6",
         "label": "4色+黒2×3",
         "price": 4549,
@@ -135,6 +95,46 @@
         "label": "4色+黒2×5",
         "price": 7099,
         "stock": "在庫あり"
+      },
+      {
+        "id": "mug-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "mug-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "mug-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "mug-avg10",
+        "label": "カラー自由10個",
+        "price": 2099,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "colorOnly"
+        }
       }
     ]
   },
@@ -171,39 +171,15 @@
     ],
     "variants": [
       {
-        "id": "med-avgall1",
-        "label": "自由選択1個",
-        "price": 499,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 1,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "med-avgall2",
-        "label": "自由選択2個",
-        "price": 749,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 2,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "med-avgall3",
-        "label": "自由選択3個",
-        "price": 999,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 3,
-          "scope": "all"
-        }
-      },
-      {
         "id": "med-set1",
         "label": "1SET売価",
         "price": 1299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "med-set1-pgbk2",
+        "label": "1SET＋黒2",
+        "price": 1949,
         "stock": "在庫あり"
       },
       {
@@ -217,16 +193,6 @@
         "label": "黒8",
         "price": 2499,
         "stock": "在庫あり"
-      },
-      {
-        "id": "med-avg10",
-        "label": "カラー自由10個",
-        "price": 2599,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 10,
-          "scope": "colorOnly"
-        }
       },
       {
         "id": "med-pgbk12",
@@ -259,12 +225,6 @@
         "stock": "在庫あり"
       },
       {
-        "id": "med-set1-pgbk2",
-        "label": "1SET＋黒2",
-        "price": 1949,
-        "stock": "在庫あり"
-      },
-      {
         "id": "med-set3-pgbk6",
         "label": "4色+黒2×3",
         "price": 5699,
@@ -275,6 +235,46 @@
         "label": "4色+黒2×5",
         "price": 8999,
         "stock": "在庫あり"
+      },
+      {
+        "id": "med-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "med-avgall2",
+        "label": "自由選択2個",
+        "price": 749,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "med-avgall3",
+        "label": "自由選択3個",
+        "price": 999,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "med-avg10",
+        "label": "カラー自由10個",
+        "price": 2599,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 10,
+          "scope": "colorOnly"
+        }
       }
     ]
   },
@@ -327,45 +327,15 @@
     ],
     "variants": [
       {
-        "id": "sat-avgall1",
-        "label": "自由選択1個",
-        "price": 499,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 1,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "sat-avgall2",
-        "label": "自由選択2個",
-        "price": 699,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 2,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "sat-avgall3",
-        "label": "自由選択3個",
-        "price": 949,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 3,
-          "scope": "all"
-        }
+        "id": "sat-set1",
+        "label": "6色1set",
+        "price": 1499,
+        "stock": "在庫あり"
       },
       {
         "id": "sat-bk4",
         "label": "黒4個",
         "price": 1199,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "sat-set1",
-        "label": "6色1set",
-        "price": 1499,
         "stock": "在庫あり"
       },
       {
@@ -409,6 +379,36 @@
         "label": "6色+黒2×3",
         "price": 5799,
         "stock": "在庫あり"
+      },
+      {
+        "id": "sat-avgall1",
+        "label": "自由選択1個",
+        "price": 499,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "sat-avgall2",
+        "label": "自由選択2個",
+        "price": 699,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "sat-avgall3",
+        "label": "自由選択3個",
+        "price": 949,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       }
     ]
   },
@@ -469,6 +469,60 @@
     ],
     "variants": [
       {
+        "id": "kam-set1",
+        "label": "6色1set",
+        "price": 1549,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set1-bk2",
+        "label": "1SET黒2*1",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set3-bk6",
+        "label": "1SET黒2*3",
+        "price": 5799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk4",
+        "label": "黒4個",
+        "price": 1149,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk8",
+        "label": "黒8",
+        "price": 1949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set2",
+        "label": "6色2set",
+        "price": 2799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-bk20",
+        "label": "黒20",
+        "price": 4899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set5",
+        "label": "5SET売価",
+        "price": 6949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "kam-set10",
+        "label": "6色10SET(60本)",
+        "price": 13249,
+        "stock": "在庫あり"
+      },
+      {
         "id": "kam-avgall1",
         "label": "自由選択1個",
         "price": 499,
@@ -499,24 +553,6 @@
         }
       },
       {
-        "id": "kam-bk4",
-        "label": "黒4個",
-        "price": 1149,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-set1",
-        "label": "6色1set",
-        "price": 1549,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-bk8",
-        "label": "黒8",
-        "price": 1949,
-        "stock": "在庫あり"
-      },
-      {
         "id": "kam-avg10",
         "label": "カラー自由10個",
         "price": 2399,
@@ -525,42 +561,6 @@
           "count": 10,
           "scope": "colorOnly"
         }
-      },
-      {
-        "id": "kam-set2",
-        "label": "6色2set",
-        "price": 2799,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-bk20",
-        "label": "黒20",
-        "price": 4899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-set5",
-        "label": "5SET売価",
-        "price": 6949,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-set10",
-        "label": "6色10SET(60本)",
-        "price": 13249,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-set1-bk2",
-        "label": "1SET黒2*1",
-        "price": 1999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "kam-set3-bk6",
-        "label": "1SET黒2*3",
-        "price": 5799,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -624,42 +624,6 @@
     ],
     "variants": [
       {
-        "id": "bci380-avgall1",
-        "label": "自由選択1個",
-        "price": 399,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 1,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "bci380-avgall2",
-        "label": "自由選択2個",
-        "price": 549,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 2,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "bci380-avgall3",
-        "label": "自由選択3個",
-        "price": 699,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 3,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "bci380-pgbk4",
-        "label": "黒4個",
-        "price": 989,
-        "stock": "在庫あり"
-      },
-      {
         "id": "bci380-set51",
         "label": "5色1set",
         "price": 989,
@@ -669,6 +633,12 @@
         "id": "bci380-set61",
         "label": "6色1set",
         "price": 1259,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-pgbk4",
+        "label": "黒4個",
+        "price": 989,
         "stock": "在庫あり"
       },
       {
@@ -712,6 +682,36 @@
         "label": "6色10SET",
         "price": 10799,
         "stock": "在庫あり"
+      },
+      {
+        "id": "bci380-avgall1",
+        "label": "自由選択1個",
+        "price": 399,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "bci380-avgall2",
+        "label": "自由選択2個",
+        "price": 549,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "bci380-avgall3",
+        "label": "自由選択3個",
+        "price": 699,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       }
     ]
   },
@@ -766,6 +766,24 @@
     ],
     "variants": [
       {
+        "id": "bci370-set1",
+        "label": "5色1set",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-pgbk4",
+        "label": "黒4個",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci370-set3",
+        "label": "5色3SET",
+        "price": 2399,
+        "stock": "在庫あり"
+      },
+      {
         "id": "bci370-avgall1",
         "label": "自由選択1個",
         "price": 449,
@@ -794,24 +812,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "bci370-pgbk4",
-        "label": "黒4個",
-        "price": 899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci370-set1",
-        "label": "5色1set",
-        "price": 899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci370-set3",
-        "label": "5色3SET",
-        "price": 2399,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -870,6 +870,42 @@
     ],
     "variants": [
       {
+        "id": "bci350-set1",
+        "label": "5色1SET(5本)",
+        "price": 899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-pgbk4",
+        "label": "黒(PGBK)4個",
+        "price": 888,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-pgbk10",
+        "label": "黒10個",
+        "price": 1899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set3",
+        "label": "5色3SET(15本)",
+        "price": 2249,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set5",
+        "label": "5色5SET",
+        "price": 3999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bci350-set10",
+        "label": "5色10SET",
+        "price": 7999,
+        "stock": "在庫あり"
+      },
+      {
         "id": "bci350-avgall1",
         "label": "自由選択1個",
         "price": 449,
@@ -898,42 +934,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "bci350-pgbk4",
-        "label": "黒(PGBK)4個",
-        "price": 888,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci350-set1",
-        "label": "5色1SET(5本)",
-        "price": 899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci350-pgbk10",
-        "label": "黒10個",
-        "price": 1899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci350-set3",
-        "label": "5色3SET(15本)",
-        "price": 2249,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci350-set5",
-        "label": "5色5SET",
-        "price": 3999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bci350-set10",
-        "label": "5色10SET",
-        "price": 7999,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -984,36 +984,6 @@
     ],
     "variants": [
       {
-        "id": "lc411-avgall1",
-        "label": "自由選択1個",
-        "price": 449,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 1,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "lc411-avgall2",
-        "label": "自由選択2個",
-        "price": 649,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 2,
-          "scope": "all"
-        }
-      },
-      {
-        "id": "lc411-avgall3",
-        "label": "自由選択3個",
-        "price": 799,
-        "stock": "在庫あり",
-        "colorPick": {
-          "count": 3,
-          "scope": "all"
-        }
-      },
-      {
         "id": "lc411-set1",
         "label": "4色1SET(4本)",
         "price": 1049,
@@ -1048,6 +1018,36 @@
         "label": "4色10SET",
         "price": 8099,
         "stock": "在庫あり"
+      },
+      {
+        "id": "lc411-avgall1",
+        "label": "自由選択1個",
+        "price": 449,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 1,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "lc411-avgall2",
+        "label": "自由選択2個",
+        "price": 649,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 2,
+          "scope": "all"
+        }
+      },
+      {
+        "id": "lc411-avgall3",
+        "label": "自由選択3個",
+        "price": 799,
+        "stock": "在庫あり",
+        "colorPick": {
+          "count": 3,
+          "scope": "all"
+        }
       }
     ]
   },
@@ -1099,6 +1099,18 @@
     ],
     "variants": [
       {
+        "id": "bc-base-set1",
+        "label": "1SET売価",
+        "price": 1399,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "bc-base-set2",
+        "label": "2SET売価",
+        "price": 2399,
+        "stock": "在庫あり"
+      },
+      {
         "id": "bc-base-avgall1",
         "label": "自由選択1個",
         "price": 999,
@@ -1127,18 +1139,6 @@
           "count": 2,
           "scope": "all"
         }
-      },
-      {
-        "id": "bc-base-set1",
-        "label": "1SET売価",
-        "price": 1399,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "bc-base-set2",
-        "label": "2SET売価",
-        "price": 2399,
-        "stock": "在庫あり"
       },
       {
         "id": "bc-base-baseavg10",
@@ -1211,6 +1211,42 @@
     ],
     "variants": [
       {
+        "id": "lc3111-set1",
+        "label": "1SET売価",
+        "price": 1199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-bk4",
+        "label": "黒4",
+        "price": 1199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set2",
+        "label": "2SET売価",
+        "price": 2099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-bk10",
+        "label": "黒10個",
+        "price": 2949,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set5",
+        "label": "4色5SET",
+        "price": 5299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc3111-set10",
+        "label": "4色10SET",
+        "price": 9999,
+        "stock": "在庫あり"
+      },
+      {
         "id": "lc3111-avgall1",
         "label": "自由選択1個",
         "price": 499,
@@ -1239,42 +1275,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "lc3111-bk4",
-        "label": "黒4",
-        "price": 1199,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc3111-set1",
-        "label": "1SET売価",
-        "price": 1199,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc3111-set2",
-        "label": "2SET売価",
-        "price": 2099,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc3111-bk10",
-        "label": "黒10個",
-        "price": 2949,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc3111-set5",
-        "label": "4色5SET",
-        "price": 5299,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc3111-set10",
-        "label": "4色10SET",
-        "price": 9999,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -1327,6 +1327,42 @@
     ],
     "variants": [
       {
+        "id": "lc211-set1",
+        "label": "1SET売価",
+        "price": 1099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-bk4",
+        "label": "黒4",
+        "price": 1099,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set2",
+        "label": "2SET売価",
+        "price": 1899,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-bk10",
+        "label": "黒10個",
+        "price": 2499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set5",
+        "label": "4色5SET",
+        "price": 4799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc211-set10",
+        "label": "4色10SET",
+        "price": 8899,
+        "stock": "在庫あり"
+      },
+      {
         "id": "lc211-avgall1",
         "label": "自由選択1個",
         "price": 449,
@@ -1355,42 +1391,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "lc211-bk4",
-        "label": "黒4",
-        "price": 1099,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc211-set1",
-        "label": "1SET売価",
-        "price": 1099,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc211-set2",
-        "label": "2SET売価",
-        "price": 1899,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc211-bk10",
-        "label": "黒10個",
-        "price": 2499,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc211-set5",
-        "label": "4色5SET",
-        "price": 4799,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc211-set10",
-        "label": "4色10SET",
-        "price": 8899,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -1442,6 +1442,42 @@
     ],
     "variants": [
       {
+        "id": "lc111-set1",
+        "label": "1SET売価",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-bk4",
+        "label": "黒4",
+        "price": 999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set2",
+        "label": "2SET売価",
+        "price": 1799,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-bk10",
+        "label": "黒10個",
+        "price": 2199,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set5",
+        "label": "4色5SET",
+        "price": 4299,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "lc111-set10",
+        "label": "4色10SET",
+        "price": 7999,
+        "stock": "在庫あり"
+      },
+      {
         "id": "lc111-avgall1",
         "label": "自由選択1個",
         "price": 449,
@@ -1470,42 +1506,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "lc111-bk4",
-        "label": "黒4",
-        "price": 999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc111-set1",
-        "label": "1SET売価",
-        "price": 999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc111-set2",
-        "label": "2SET売価",
-        "price": 1799,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc111-bk10",
-        "label": "黒10個",
-        "price": 2199,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc111-set5",
-        "label": "4色5SET",
-        "price": 4299,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "lc111-set10",
-        "label": "4色10SET",
-        "price": 7999,
-        "stock": "在庫あり"
       }
     ]
   },
@@ -1563,6 +1563,42 @@
     ],
     "variants": [
       {
+        "id": "ic6cl80l-set1",
+        "label": "6色1set",
+        "price": 1149,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-bk4",
+        "label": "黒4個",
+        "price": 849,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set2",
+        "label": "6色2set",
+        "price": 1999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-黒(大容量)20",
+        "label": "黒20個",
+        "price": 6499,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set5",
+        "label": "5SET売価",
+        "price": 4999,
+        "stock": "在庫あり"
+      },
+      {
+        "id": "ic6cl80l-set10",
+        "label": "10SET売価",
+        "price": 9499,
+        "stock": "在庫あり"
+      },
+      {
         "id": "ic6cl80l-avgall1",
         "label": "自由選択1個",
         "price": 449,
@@ -1591,42 +1627,6 @@
           "count": 3,
           "scope": "all"
         }
-      },
-      {
-        "id": "ic6cl80l-bk4",
-        "label": "黒4個",
-        "price": 849,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "ic6cl80l-set1",
-        "label": "6色1set",
-        "price": 1149,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "ic6cl80l-set2",
-        "label": "6色2set",
-        "price": 1999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "ic6cl80l-黒(大容量)20",
-        "label": "黒20個",
-        "price": 6499,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "ic6cl80l-set5",
-        "label": "5SET売価",
-        "price": 4999,
-        "stock": "在庫あり"
-      },
-      {
-        "id": "ic6cl80l-set10",
-        "label": "10SET売価",
-        "price": 9499,
-        "stock": "在庫あり"
       }
     ]
   }
