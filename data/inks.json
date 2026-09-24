@@ -575,7 +575,9 @@
       "BCI380XL",
       "BCI381XL",
       "380",
-      "381"
+      "381",
+      "BCI-381+380",
+      "381+380"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -723,7 +725,10 @@
       "BCI370XL",
       "BCI371XL",
       "370",
-      "371"
+      "371",
+      "BCI371+370",
+      "BCI-371+370",
+      "371+370"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -820,7 +825,10 @@
       "BCI350XL",
       "BCI351XL",
       "350",
-      "351"
+      "351",
+      "BCI351+350",
+      "BCI-351+350",
+      "351+350"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -934,7 +942,9 @@
     "image": "images/products/LC411.png",
     "name": "brother LC411 互換セット",
     "aliases": [
-      "LC411XL"
+      "LC411XL",
+      "LC-411",
+      "LC-411XL"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -1053,7 +1063,11 @@
       "BC-366",
       "BC310",
       "BC345",
-      "BC365"
+      "BC365",
+      "BC346",
+      "BC366",
+      "BC-311",
+      "BC311"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -1153,7 +1167,9 @@
     "image": "images/products/LC3111.png",
     "name": "brother LC3111 互換セット",
     "aliases": [
-      "LC3111XL"
+      "LC3111XL",
+      "LC-3111",
+      "LC-3111XL"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -1267,7 +1283,9 @@
     "image": "images/products/LC211.png",
     "name": "brother LC211 互換セット",
     "aliases": [
-      "LC211XL"
+      "LC211XL",
+      "LC-211",
+      "LC-211XL"
     ],
     "rating": 4,
     "compatiblePrinters": [
@@ -1381,7 +1399,9 @@
     "image": "images/products/LC111.png",
     "name": "brother LC111 互換セット",
     "aliases": [
-      "LC111XL"
+      "LC111XL",
+      "LC-111",
+      "LC-111XL"
     ],
     "rating": 4,
     "compatiblePrinters": [
