@@ -380,3 +380,24 @@ body {
   padding: 2px 4px;
 }
 .color-remove-btn:hover { color: var(--wine-900); }
+#model-list {
+  border-top: 1px solid var(--cream-100);
+  padding-top: 28px;
+}
+.model-list-group {
+  margin-bottom: 18px;
+}
+.model-list-group h3 {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--wine-700);
+  margin-bottom: 4px;
+}
+.model-list-line {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-600);
+  line-height: 1.9;
+  word-break: break-word;
+}
