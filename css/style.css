@@ -600,3 +600,115 @@ body {
     justify-content: center;
   }
 }
+
+/* 送料無料バナー */
+.shipping-banner {
+  max-width: 1160px;
+  margin: 28px auto 0;
+  padding: 32px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: linear-gradient(110deg, #f0f7ff, #ffffff 65%, #e5f2ff);
+  border: 1px solid #e0ebf7;
+  border-radius: 10px;
+  color: #12345a;
+}
+
+.shipping-banner-copy {
+  flex: 1;
+}
+
+.shipping-eyebrow {
+  margin-bottom: 8px;
+  color: #0868c9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.shipping-banner-copy h2 {
+  margin: 0;
+  color: #12345a;
+  font-size: clamp(24px, 3.5vw, 38px);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.shipping-banner-copy h2 span {
+  color: #0878df;
+}
+
+.shipping-description {
+  margin-top: 12px;
+  color: #52677e;
+  font-size: 14px;
+}
+
+.shipping-banner-badge {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #0878df;
+  border: 6px solid #ffffff;
+  box-shadow: 0 0 0 2px #cfe5ff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.shipping-banner-badge > span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.shipping-banner-badge strong {
+  color: #ffeb65;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.shipping-truck {
+  font-size: 30px;
+}
+
+@media (max-width: 640px) {
+  .shipping-banner {
+    margin: 16px 14px 0;
+    padding: 22px 16px;
+    gap: 10px;
+  }
+
+  .shipping-banner-copy h2 {
+    font-size: 22px;
+  }
+
+  .shipping-description {
+    font-size: 12px;
+  }
+
+  .shipping-banner-badge {
+    width: 112px;
+    height: 112px;
+    border-width: 4px;
+  }
+
+  .shipping-banner-badge > span:first-child {
+    font-size: 16px;
+  }
+
+  .shipping-banner-badge strong {
+    font-size: 16px;
+  }
+
+  .shipping-truck {
+    font-size: 20px;
+  }
+}
