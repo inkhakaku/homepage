@@ -401,3 +401,202 @@ body {
   line-height: 1.9;
   word-break: break-word;
 }
+
+/* ===== インク破格王：白背景・ブルー基調の新デザイン ===== */
+:root {
+  --wine-900: #12345a;
+  --wine-700: #0868c9;
+  --wine-500: #2588e8;
+  --gold-500: #0878df;
+  --gold-300: #d9ebff;
+  --cream-50: #ffffff;
+  --cream-100: #e5edf5;
+  --ink-900: #20354d;
+  --ink-600: #63758a;
+  --radius: 10px;
+  --max-width: 1200px;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  color: #20354d;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5edf5;
+  padding: 18px 0;
+  box-shadow: 0 2px 10px rgba(20, 55, 90, 0.04);
+}
+
+.brand {
+  color: #12345a;
+}
+
+.brand small {
+  color: #63758a;
+}
+
+.hero {
+  background: #ffffff;
+  padding: 48px 0 42px;
+}
+
+.hero-copy h1 {
+  color: #12345a;
+}
+
+.hero-copy h1 .accent {
+  color: #0878df;
+}
+
+.hero-copy p {
+  color: #52677e;
+}
+
+.scan-frame {
+  max-width: 700px;
+  padding: 16px;
+}
+
+.scan-frame::before,
+.scan-frame::after,
+.scan-frame .corner-tl,
+.scan-frame .corner-br {
+  border-color: #2588e8;
+}
+
+.search-box {
+  background: #ffffff;
+  border: 1px solid #dce6f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(20, 55, 90, 0.07);
+}
+
+.search-box input {
+  border-color: #e0e8f1;
+  border-radius: 7px;
+  color: #20354d;
+}
+
+.search-box input::placeholder {
+  color: #9aaabd;
+}
+
+.search-box button {
+  background: #0878df;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.search-box button:hover {
+  background: #065eae;
+}
+
+.hint-line {
+  color: #63758a;
+}
+
+.trust-row {
+  gap: 14px;
+}
+
+.badge {
+  color: #12345a;
+}
+
+.section h2,
+.recent-section h2 {
+  color: #12345a;
+}
+
+.chip {
+  background: #ffffff;
+  color: #0868c9;
+  border: 1px solid #d8e5f2;
+  border-radius: 24px;
+}
+
+.chip:hover {
+  background: #edf6ff;
+  border-color: #2588e8;
+}
+
+.result-area {
+  background: #ffffff;
+}
+
+.product-card,
+.result-card {
+  background: #ffffff;
+  border: 1px solid #e0e8f1;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(20, 55, 90, 0.04);
+}
+
+.buy-btn {
+  background: #0878df;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.buy-btn:hover {
+  background: #065eae;
+}
+
+.color-chip {
+  color: #0868c9;
+  border-color: #d8e5f2;
+  border-radius: 20px;
+}
+
+.color-chip.is-selected {
+  background: #0878df;
+  border-color: #0878df;
+  color: #ffffff;
+}
+
+.color-selected-tag {
+  background: #edf6ff;
+  color: #12345a;
+}
+
+#model-list {
+  border-top-color: #e5edf5;
+}
+
+.model-list-group h3 {
+  color: #12345a;
+}
+
+.site-footer {
+  background: #12345a;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 32px 0;
+  }
+
+  .hero-copy {
+    margin-bottom: 22px;
+  }
+
+  .scan-frame {
+    padding: 10px;
+  }
+
+  .search-box input {
+    padding: 12px 9px;
+  }
+
+  .trust-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
