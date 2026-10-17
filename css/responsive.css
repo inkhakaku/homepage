@@ -197,3 +197,223 @@
     padding: 24px 0;
   }
 }
+
+/* ===== スマホ表示の改善 ===== */
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 28px);
+  }
+
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .site-header .wrap {
+    gap: 8px;
+  }
+
+  .brand {
+    gap: 7px;
+    font-size: 17px;
+  }
+
+  .brand::before {
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+  }
+
+  .brand small {
+    max-width: 190px;
+    font-size: 9px;
+  }
+
+  .header-links {
+    gap: 5px;
+  }
+
+  .header-links a {
+    min-height: 34px;
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  .shipping-banner {
+    width: calc(100% - 28px);
+    margin-top: 16px;
+    padding: 20px 16px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+
+  .shipping-banner-copy h2 {
+    font-size: clamp(19px, 5vw, 26px);
+  }
+
+  .shipping-eyebrow {
+    font-size: 10px;
+  }
+
+  .shipping-description {
+    font-size: 11px;
+  }
+
+  .shipping-banner-badge {
+    width: 92px;
+    height: 92px;
+    border-width: 3px;
+    outline-width: 1px;
+  }
+
+  .shipping-banner-badge > span:first-child {
+    font-size: 13px;
+  }
+
+  .shipping-banner-badge strong {
+    font-size: 15px;
+  }
+
+  .shipping-truck {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 34px 0 24px;
+  }
+
+  .hero-copy {
+    margin-bottom: 18px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(27px, 7vw, 34px);
+  }
+
+  .hero-copy p {
+    font-size: 12px;
+  }
+
+  .scan-frame {
+    padding: 9px;
+  }
+
+  .search-box {
+    gap: 6px;
+    padding: 5px;
+  }
+
+  .search-box input {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .search-box input::placeholder {
+    font-size: 11px;
+  }
+
+  .search-box button {
+    padding: 0 13px;
+    font-size: 12px;
+  }
+
+  .trust-row {
+    gap: 10px 12px;
+    margin-top: 18px;
+  }
+
+  .trust-row .badge {
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .trust-row .badge::before {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 22px 0;
+  }
+
+  .section h2,
+  #model-list > h2 {
+    font-size: 17px;
+  }
+
+  .chip-row {
+    gap: 7px;
+  }
+
+  .chip {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .finder-section {
+    padding: 18px 14px;
+  }
+
+  .finder-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .finder-card {
+    padding: 14px;
+  }
+
+  .result-card {
+    padding: 15px;
+  }
+
+  .result-card-top {
+    gap: 12px;
+  }
+
+  .product-thumb {
+    width: 90px;
+    height: 90px;
+  }
+
+  .result-card h3 {
+    font-size: 16px;
+  }
+
+  .variant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #model-list {
+    width: calc(100% - 28px);
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand small {
+    display: none;
+  }
+
+  .header-links a {
+    padding: 6px;
+    font-size: 9px;
+  }
+
+  .shipping-banner {
+    padding: 16px 12px;
+  }
+
+  .shipping-banner-badge {
+    width: 78px;
+    height: 78px;
+  }
+
+  .shipping-banner-badge strong {
+    font-size: 13px;
+  }
+
+  .search-box button {
+    padding: 0 9px;
+  }
+}
