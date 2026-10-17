@@ -1,12 +1,199 @@
-@media (max-width: 600px) {
-  .hero { padding: 40px 0 52px; }
-  .scan-frame { padding: 14px; }
-  .search-box { flex-direction: column; }
-  .search-box button { padding: 14px; }
-  .trust-row { gap: 14px 20px; }
-  .variant-grid { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 900px) {
+  .finder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .variant-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-  .variant-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 28px);
+  }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .site-header .wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .brand::before {
+    width: 36px;
+    height: 36px;
+    font-size: 23px;
+  }
+
+  .brand small {
+    font-size: 10px;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  .header-links a {
+    flex: 1;
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .shipping-banner {
+    width: calc(100% - 28px);
+    margin-top: 16px;
+    padding: 20px 14px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+
+  .shipping-banner-copy h2 {
+    font-size: 21px;
+  }
+
+  .shipping-eyebrow {
+    font-size: 10px;
+  }
+
+  .shipping-description {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .shipping-banner-badge {
+    width: 104px;
+    height: 104px;
+    border-width: 3px;
+  }
+
+  .shipping-banner-badge > span:first-child {
+    font-size: 14px;
+  }
+
+  .shipping-banner-badge strong {
+    font-size: 15px;
+  }
+
+  .shipping-truck {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 30px 0 25px;
+  }
+
+  .hero-copy {
+    margin-bottom: 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: 29px;
+  }
+
+  .hero-copy p {
+    font-size: 12px;
+  }
+
+  .scan-frame {
+    padding: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 13px 11px;
+    font-size: 16px;
+  }
+
+  .search-box input::placeholder {
+    font-size: 12px;
+  }
+
+  .search-box button {
+    min-height: 46px;
+    padding: 12px;
+  }
+
+  .hint-line {
+    font-size: 11px;
+  }
+
+  .trust-row {
+    justify-content: flex-start;
+    gap: 10px 14px;
+    margin-top: 22px;
+  }
+
+  .trust-row .badge {
+    font-size: 11px;
+  }
+
+  .section {
+    padding: 23px 0;
+  }
+
+  .section h2,
+  #model-list > h2 {
+    font-size: 17px;
+  }
+
+  .chip-row {
+    gap: 8px;
+  }
+
+  .chip {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .finder-section {
+    padding: 18px 14px;
+  }
+
+  .finder-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .finder-card {
+    padding: 13px;
+  }
+
+  .result-card {
+    padding: 15px;
+  }
+
+  .result-card-top {
+    gap: 12px;
+  }
+
+  .product-thumb {
+    width: 96px;
+    height: 96px;
+  }
+
+  .result-card h3 {
+    font-size: 16px;
+  }
+
+  .variant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #model-list {
+    width: calc(100% - 28px);
+    padding: 24px 0;
+  }
 }
