@@ -805,3 +805,133 @@ img {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ===== 完成イメージ：メインバナー ===== */
+.shipping-banner.hero-banner {
+  position: relative;
+  min-height: 192px;
+  margin-top: 12px;
+  padding: 28px 290px 26px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: #f4f8fc;
+  isolation: isolate;
+}
+
+.hero-banner .shipping-banner-copy {
+  position: relative;
+  z-index: 2;
+  flex: 0 1 410px;
+}
+
+.hero-banner .shipping-banner-copy h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.hero-banner .shipping-description {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.hero-banner-image {
+  position: absolute;
+  inset: 0 100px 0 34%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-banner-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 70% center;
+  mix-blend-mode: multiply;
+}
+
+.hero-banner .shipping-banner-badge {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 12px;
+  width: 142px;
+  height: 142px;
+  transform: translateY(-50%);
+  border: 4px solid #fff;
+  outline: 0;
+  background: #0878df;
+  box-shadow: 0 2px 8px rgba(0, 75, 160, 0.18);
+}
+
+.hero-banner .shipping-banner-badge > span:first-child {
+  font-size: 20px;
+}
+
+.hero-banner .shipping-banner-badge strong {
+  font-size: 24px;
+}
+
+.hero-banner .shipping-truck {
+  font-size: 28px;
+}
+
+/* ===== スマホ用メインバナー ===== */
+@media (max-width: 600px) {
+  .shipping-banner.hero-banner {
+    min-height: 250px;
+    padding: 20px 16px 115px;
+    align-items: flex-start;
+  }
+
+  .hero-banner .shipping-banner-copy {
+    max-width: 100%;
+  }
+
+  .hero-banner .shipping-banner-copy h2 {
+    font-size: clamp(23px, 6vw, 30px);
+  }
+
+  .hero-banner .shipping-description {
+    max-width: 260px;
+    font-size: 12px;
+  }
+
+  .hero-banner-image {
+    inset: auto 0 0 20%;
+    height: 120px;
+  }
+
+  .hero-banner-image img {
+    object-position: 75% center;
+  }
+
+  .hero-banner .shipping-banner-badge {
+    top: auto;
+    right: 10px;
+    bottom: 10px;
+    width: 88px;
+    height: 88px;
+    transform: none;
+    border-width: 3px;
+  }
+
+  .hero-banner .shipping-banner-badge > span:first-child {
+    font-size: 13px;
+  }
+
+  .hero-banner .shipping-banner-badge strong {
+    font-size: 14px;
+  }
+
+  .hero-banner .shipping-truck {
+    font-size: 17px;
+  }
+}
