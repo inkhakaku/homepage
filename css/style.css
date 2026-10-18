@@ -1004,3 +1004,73 @@ img {
     min-height: 78px !important;
   }
 }
+/* ===== 見出しの改行位置を固定 ===== */
+.shipping-banner.hero-banner .shipping-banner-copy {
+  width: 50% !important;
+  max-width: 680px !important;
+  min-width: 0 !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-copy h2 {
+  width: max-content !important;
+  max-width: 100% !important;
+  font-size: clamp(26px, 3vw, 44px) !important;
+  line-height: 1.4 !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  white-space: normal !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-copy h2 br {
+  display: block !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-copy h2 span {
+  display: block !important;
+  white-space: nowrap !important;
+}
+
+.shipping-banner.hero-banner .shipping-description {
+  max-width: 100% !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  line-height: 1.7 !important;
+}
+
+.shipping-banner.hero-banner .hero-banner-image {
+  left: 52% !important;
+  right: 145px !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 800px) {
+  .shipping-banner.hero-banner .shipping-banner-copy {
+    width: 52% !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 {
+    font-size: clamp(22px, 3.5vw, 30px) !important;
+  }
+
+  .shipping-banner.hero-banner .hero-banner-image {
+    left: 48% !important;
+    right: 90px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .shipping-banner.hero-banner .shipping-banner-copy {
+    width: 100% !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 {
+    width: 100% !important;
+    font-size: 25px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 span {
+    white-space: normal !important;
+  }
+}
