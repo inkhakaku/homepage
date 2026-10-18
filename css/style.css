@@ -935,3 +935,72 @@ img {
     font-size: 17px;
   }
 }
+/* ===== 最終調整：文字と商品画像の配置 ===== */
+.shipping-banner.hero-banner {
+  height: 300px !important;
+  min-height: 300px !important;
+  padding: 30px 0 30px 4% !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-copy {
+  width: 48% !important;
+  max-width: 620px !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-copy h2 {
+  font-size: clamp(28px, 3.2vw, 44px) !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  word-break: normal !important;
+}
+
+.shipping-banner.hero-banner .shipping-description {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+.shipping-banner.hero-banner .hero-banner-image {
+  left: 42% !important;
+  right: 105px !important;
+}
+
+.shipping-banner.hero-banner .shipping-banner-badge {
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px !important;
+  min-height: 140px !important;
+  right: 12px !important;
+}
+
+@media (max-width: 600px) {
+  .shipping-banner.hero-banner {
+    height: 300px !important;
+    min-height: 300px !important;
+    padding: 20px 14px 125px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy {
+    width: 100% !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 {
+    font-size: 25px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-description {
+    font-size: 12px !important;
+  }
+
+  .shipping-banner.hero-banner .hero-banner-image {
+    left: 8% !important;
+    right: 0 !important;
+    height: 125px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-badge {
+    width: 78px !important;
+    height: 78px !important;
+    min-width: 78px !important;
+    min-height: 78px !important;
+  }
+}
