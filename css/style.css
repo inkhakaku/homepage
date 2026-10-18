@@ -1074,3 +1074,81 @@ img {
     white-space: normal !important;
   }
 }
+/* ===== スマホ用：コンパクトな横長バナー ===== */
+@media (max-width: 600px) {
+  .shipping-banner.hero-banner {
+    height: 175px !important;
+    min-height: 175px !important;
+    padding: 14px 10px !important;
+    overflow: hidden !important;
+    border-radius: 8px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy {
+    position: relative !important;
+    z-index: 3 !important;
+    width: 65% !important;
+    max-width: 65% !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 {
+    width: 100% !important;
+    font-size: clamp(17px, 4.8vw, 23px) !important;
+    line-height: 1.35 !important;
+    word-break: keep-all !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-copy h2 span {
+    white-space: normal !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-description {
+    max-width: 100% !important;
+    margin-top: 5px !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    word-break: normal !important;
+  }
+
+  .shipping-banner.hero-banner .hero-banner-image {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 32% !important;
+    width: auto !important;
+    height: 100% !important;
+    z-index: 1 !important;
+  }
+
+  .shipping-banner.hero-banner .hero-banner-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 72% center !important;
+    opacity: 0.8 !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-badge {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    min-height: 58px !important;
+    right: 5px !important;
+    top: auto !important;
+    bottom: 5px !important;
+    transform: none !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-badge > span:first-child {
+    font-size: 9px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-banner-badge strong {
+    font-size: 10px !important;
+  }
+
+  .shipping-banner.hero-banner .shipping-truck {
+    font-size: 12px !important;
+  }
+}
